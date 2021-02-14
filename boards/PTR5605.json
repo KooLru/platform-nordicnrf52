@@ -1,0 +1,45 @@
+{
+  "build": {
+    "arduino":{
+      "ldscript": "nrf52805_xxaa.ld"
+    },
+    "core": "nRF5",
+    "cpu": "cortex-m4",
+    "extra_flags": "-DNRF52805_XXAA",
+    "f_cpu": "64000000L",
+    "mcu": "nrf52805",
+    "variant": "PTR5605"
+  },
+  "connectivity": [
+    "bluetooth",
+    "nfc"
+  ],
+
+  "debug": {
+    "default_tools": [
+      "jlink"
+    ],
+    "jlink_device": "nrf52805_xxAA",
+    "svd_path": "nrf52.svd"
+  },
+  "frameworks": [
+    "arduino",
+    "mbed"
+  ],
+  "name": "PTR5605",
+  "upload": {
+    "maximum_ram_size": 24576,
+    "maximum_size": 192000,
+    "protocol": "jlink",
+    "protocols": [
+      "jlink",
+      "nrfjprog",
+      "stlink",
+      "blackmagic",
+      "cmsis-dap",
+      "mbed"
+    ]
+  },
+  "url": "https://github.com/KooLru/MySX-boards/tree/master/boards/PTR5605",
+  "vendor": "KooLru"
+}
