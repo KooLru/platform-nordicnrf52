@@ -1,0 +1,45 @@
+{
+  "build": {
+    "arduino":{
+      "ldscript": "nrf52_xxaa.ld"
+    },
+    "core": "nRF5",
+    "cpu": "cortex-m4",
+    "extra_flags": "-DARDUINO_GENERIC -DNRF52832_XXAA -DNRF52",
+    "f_cpu": "64000000L",
+    "mcu": "nrf52832",
+    "variant": "MYSX_16048_r4"
+  },
+  "connectivity": [
+    "bluetooth",
+    "nfc"
+  ],
+
+  "debug": {
+    "default_tools": [
+      "jlink"
+    ],
+    "jlink_device": "nRF52832_xxAA",
+    "svd_path": "nrf52.svd"
+  },
+  "frameworks": [
+    "arduino",
+    "mbed"
+  ],
+  "name": "MYSX YJ-16048",
+  "upload": {
+    "maximum_ram_size": 65536,
+    "maximum_size": 524288,
+    "protocol": "jlink",
+    "protocols": [
+      "jlink",
+      "nrfjprog",
+      "stlink",
+      "blackmagic",
+      "cmsis-dap",
+      "mbed"
+    ]
+  },
+  "url": "https://github.com/KooLru/MySX-boards/tree/master/boards/YJ-16048",
+  "vendor": "KooLru"
+}
